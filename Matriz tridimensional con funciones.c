@@ -12,7 +12,7 @@ int filas, columnas,num;
     printf("Primera Matriz:\n");
     
     int matriz[filas][columnas][num];
-
+    tridimensional(filas,columnas,num,matriz);
     
 
 return 0;   
