@@ -12,13 +12,14 @@ int filas, columnas,num;
     printf("Primera Matriz:\n");
     
     int matriz[filas][columnas][num];
-    tridimensional(filas,columnas,num,matriz);
+
     
 
 return 0;   
 }
 void tridimensional(int filas,int columnas,int num,int matriz[filas][columnas][num]){
     for (int k = 1; k< num; k++){
+   
         for (int i = 0; i < filas; i++) {
             for (int j = 0; j < columnas; j++) {
                 matriz[i][j][k] = 0;
@@ -27,6 +28,16 @@ void tridimensional(int filas,int columnas,int num,int matriz[filas][columnas][n
                 printf("\n");
                 }
                 printf("\n");
+                }
+    for (int k = num; k<= num; k++){
+    
+        for (int i = 0; i < filas; i++) {
+            for (int j = 0; j < columnas; j++) {
+                matriz[i][j][k] = 1;
+                printf("%d ", matriz[i][j][k]);
+                }
+                printf("\n");
+                }
                 }
 }
 
